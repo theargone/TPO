@@ -1,0 +1,111 @@
+
+
+body {
+    background: beige;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    margin: 0 0;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 2px;
+}
+
+
+
+.Animacion {
+    display: flex;
+    width: 360px;
+    height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+    font-style:normal;
+    color: black;
+    margin: auto;
+
+    overflow: hidden;
+}
+
+.Animacion ul{
+    list-style: none;
+    padding: 10px;
+    animation: cambio 7s infinite;
+ }
+
+ .Animacion ul, p{
+    margin:0;
+}
+
+@keyframes cambio {
+    0%{margin-top: -10px;}
+    20%{margin-top: -10px;}
+    
+
+    55%{margin-top: -70px;}
+    80%{margin-top: -70px;}
+}
+
+.main{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.header{
+    background: black;
+    color: white;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation ul {
+    margin: 15px;
+    padding: 0;
+    list-style: none;
+    }
+     .navigation ul li{
+         display: inline-block;
+     }
+     .navigation ul li a{
+         display: block;
+         padding: 5px;
+         transition: all 0.4s linear;
+         border-radius: 5px;
+     }   
+     .navigation ul li a:hover {
+         background: grey;
+     }
+
+     .footer{
+        background: black;
+        color: white;
+        padding: 5px 0;
+        text-align: center;
+        position:fixed;
+        width: 100%;
+        bottom: 0;
+        height: 30px;
+        
+    }

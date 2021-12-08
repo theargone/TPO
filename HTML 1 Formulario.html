@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+        <head> 
+            <title>Formulario de Tomas</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="CSS\Hoja estilo formulario.css">
+           </head>
+        <body>
+            
+            <form action="">
+            <h1>Contactame</h1>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Nombre" name="name" required minlength="3" maxlength="12" size="10">
+            <label for="phone">Telefono:</label>
+            <input type="tel" id="phone" placeholder="Telefono" name="phone"
+            pattern="[0-9]{4}-[0-9]{4}"required>
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" placeholder="Gmail"
+                pattern=".+@Gmail.com" size="30" required>
+            <textarea name="Consulta" placeholder="Escriba aqui su consulta"></textarea>
+            <input type="submit" value="Enviar" onclick= "Enviar()" id="boton">
+            </form>
+            <div id="error"></div>
+
+            <script src= "JS\Validacion.js"></script>
+        </body>
